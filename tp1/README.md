@@ -10,7 +10,7 @@
 ```
 Coller ici les infos *utiles* de lscpu.
 ```
-
+ 
 
 ## Produit matrice-matrice
 
