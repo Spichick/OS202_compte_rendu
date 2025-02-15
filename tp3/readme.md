@@ -11,9 +11,9 @@ Veuillez taper par exemple `mpirun -n 4 python3 bucket.py` dans le terminal.
 
 ## Résultats
 
-|| Méthode 1 | Méthode 1 | Méthode 2 | Méthode 2 |
-||--------------------------|----------------------------|--------------------------|----------------------------|
-|| balanced data            | imbalanced data            | balanced data            | imbalanced data            |
+|         | Méthode 1 | Méthode 1 | Méthode 2 | Méthode 2 |
+|---------|-----------|-----------|-----------|-----------|
+|         | balanced data            | imbalanced data            | balanced data            | imbalanced data            |
 |Process 0| 0.000076                 | 0.000320                   | 0.000076                 | 0.000078                   |
 |Process 1| 0.000081                 | 0.000058                   | 0.000077                 | 0.000077                   |
 |Process 2| 0.000079                 | 0.000008                   | 0.000077                 | 0.000076                   |
