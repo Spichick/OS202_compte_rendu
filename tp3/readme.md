@@ -2,7 +2,7 @@
 ## Structure
 Deux fichiers:
 bucket.py pour **la méthode 1**, cad des buckets équirépartis entre le min et max global.
-imbalanced_bucket.py pour **la méthode 2**, `calculation des quantiles`.
+imbalanced_bucket.py pour **la méthode 2**, `calculation des quantiles`. On divise selon les pourcentages des datas. Par exemple si l'on a 4 buckets, on prend les premiers 25% datas dans le bucket 1, 25% - 50% dans le bucket 2, etc.
 
 En plus, j'ai ajouté dans le fichier bucket.py la création des datas déséquilibrés afin de comparer la performance des deux méthodes.
 
@@ -12,8 +12,8 @@ Veuillez taper par exemple `mpirun -n 4 python3 bucket.py` dans le terminal.
 ## Résultats
 
 || Méthode 1 | Méthode 1 | Méthode 2 | Méthode 2 |
-|--|--------------------------|----------------------------|--------------------------|----------------------------|
-|--| balanced data            | imbalanced data            | balanced data            | imbalanced data            |
+||--------------------------|----------------------------|--------------------------|----------------------------|
+|| balanced data            | imbalanced data            | balanced data            | imbalanced data            |
 |Process 0| 0.000076                 | 0.000320                   | 0.000076                 | 0.000078                   |
 |Process 1| 0.000081                 | 0.000058                   | 0.000077                 | 0.000077                   |
 |Process 2| 0.000079                 | 0.000008                   | 0.000077                 | 0.000076                   |
