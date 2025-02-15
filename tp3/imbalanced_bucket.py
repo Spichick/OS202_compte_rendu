@@ -1,6 +1,8 @@
 from mpi4py import MPI
 import numpy as np
 
+imb_data = True
+
 def bucket_sort(arr):
     if len(arr) == 0:
         return arr
@@ -14,11 +16,12 @@ def dataset_imb():
     if rank == 0:
         num_elements = 5000
         data = [np.random.uniform(0, 1) for _ in range(num_elements)]
-
-        # imb_data
-        for i in range(size - 1):
-            data = np.array(data) ** 4 
-            data = data.tolist()
+        
+        if (imb_data==True):
+            # imb_data
+            for i in range(size - 1):
+                data = np.array(data) ** 4 
+                data = data.tolist()
 
     else:
         data = None
